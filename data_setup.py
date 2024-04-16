@@ -1,5 +1,5 @@
 """
-Este script contiene una función para crear los DataLoaders con los que se entrena el modelo
+Este script contiene una función para crear los DataLoaders con los que se entrena el modelo. pito
 """
 
 import torch
