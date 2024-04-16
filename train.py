@@ -80,12 +80,12 @@ if __name__ == "__main__":
     # Guardando el modelo en la carpeta "models"
     if not os.path.exists(OUTPUT_MODE_DIR):
         os.makedirs(OUTPUT_MODE_DIR)
-        
+
     try:
         listdir = os.listdir(OUTPUT_MODE_DIR)
         new_numeration = int(sorted(listdir)[-1][-4]) + 1
-        new_name = f"OrangeNet_{new_numeration}.pt"
+        new_name = f"Derma_ViTsion_{new_numeration}.pt"
     except IndexError:
-        new_name = "OrangeNet_0.pt"
+        new_name = "Derma_ViTsion_0.pt"
 
     torch.save(classificationModel.state_dict(), f"{OUTPUT_MODE_DIR}/{new_name}")
